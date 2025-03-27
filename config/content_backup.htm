@@ -89,8 +89,43 @@ brython_div1 &lt;= "6. " + html.A("41223133", href="https://mdecd2025.github.io/
 brython_div1 &lt;= html.BR()
 brython_div1 &lt;= "7. " + html.A("41223147", href="https://mdecd2025.github.io/hw-41223147/")+ html.A("(repo)", href="https://github.com/mdecd2025/hw-41223147")
 </pre>
+<p><span>ag6小組倉儲組員倉儲連結:</span></p>
 <p><span>1. </span><a href="https://mdecd2025.github.io/2a-ag6/">2a-ag6</a><a href="https://github.com/mdecd2025/2a-ag6">(repo)</a><br/><span>2. </span><a href="https://mdecd2025.github.io/hw-41223110/">41223110</a><a href="https://github.com/mdecd2025/hw-41223110">(repo)</a><br/><span>3. </span><a href="https://mdecd2025.github.io/hw-Linjiahong41223125/">41223125</a><a href="https://github.com/mdecd2025/hw-Linjiahong41223125">(repo)</a><br/><span>4. </span><a href="https://mdecd2025.github.io/hw-hong41223129/">41223129</a><a href="https://github.com/mdecd2025/hw-hong41223129">(repo)</a><br/><span>5. </span><a href="https://mdecd2025.github.io/hw-CHN41223132/">41223132</a><a href="https://github.com/mdecd2025/hw-CHN41223132">(repo)</a><br/><span>6. </span><a href="https://mdecd2025.github.io/hw-41223133/">41223133</a><a href="https://github.com/mdecd2025/hw-41223133">(repo)</a><br/><span>7. </span><a href="https://mdecd2025.github.io/hw-41223147/">41223147</a><a href="https://github.com/mdecd2025/hw-41223147">(repo)</a></p>
-<h2>W5</h2>
+<p></p>
+<p><span>列出各班目前尚未納入分組的學員名單</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 甲班學員資料處理
+url = "https://mde.tw/list/2a.txt"
+data = open(url).readlines()
+all_stud = data[1:]
+a_all_members = ['41223154', '41271125', '41271158', '41271146', '41271131', 'CYG41223103', '41223102', '41023128', '41023137', '41223137', '41223157', '41223156', 'otakuyoyo', '41223141', '41223113', 'kim41223114', 'joeisme1208', '41223116', '41223144', '41223140', '41223143', '41223138', '41223134', '41223136', 'zhe41223118', 'Spirit0224', 'yuhao-08', '41223158', 'Ren911308', '41223150', 'Manto8', 'CYA41223106', 'yan21ed', 'Lin41223107', '41223133', 'hong41223129', '41223110', '41223147', 'Linjiahong41223125', 'CHN41223132', 'Yu-Fang-Hong', '41023111', 'yckaooooo', 'kolas911205', '41023105', '40932134', '41223104', 'yan41223101', '41223105', '41223153', '41223120', '41223152', 'G8People', 'WSE41223112', '41223146', '41223119']
+ 
+# 顯示甲班標題
+print("甲班:")
+for i in all_stud:
+    drop_n = i.rstrip("\n")
+    stud = drop_n.split("\t")
+    stud_num = stud[0]
+    stud_github = stud[1]
+    if stud_github not in a_all_members:
+        print(stud_num)
+ 
+# 乙班學員資料處理
+url = "https://mde.tw/list/2b.txt"
+data = open(url).readlines()
+all_stud = data[1:]
+b_all_members = ['41223251', '41223211', '41223245', '41223243', 'jjjay41223212', 'leeshaowei0716', '41223234', '41223209', '41223205', '41223201', '41223202', '41223208-hw', '41223216', '41223217', '41223248', 'emma0312', '41223242', '41223203', '41223144', '41223235', 'RAY41223215', 'hyy41223228', '41223227', '41223206', '41223226-0', 'Cloud41223237', 'Yujenchuang', '41223225', 'ljg41223220', 'supowen', 'jacky93111', '41223246', 'Liu41223244', '41223236', '41223219', '41271237', '41223249', '41223229', '41223224', '41223222', '41223231', 'linryan23', '41023114', '41223230', 'timluo123', 'CYC41223247', '41223218', 'ych0227', '41023215', '41023216', '41023213', '41071203', '41071204', '41071202', 'c-ching', 'YUN4', 'tseYU000', 'snowfall-killer', 'junpig10']
+ 
+# 顯示乙班標題
+print("\n乙班:")
+for i in all_stud:
+    drop_n = i.rstrip("\n")
+    stud = drop_n.split("\t")
+    stud_num = stud[0]
+    stud_github = stud[1]
+    if stud_github not in b_all_members:
+        print(stud_num)</pre>
+<p>甲班:<br/>41023220<br/>41223111<br/>41223119<br/>41223124<br/>41223148</p>
+<p>乙班:<br/>40923137<br/>41023237<br/>41223210<br/>41223214<br/>41223232<br/>41223233<br/>41223239<br/>41271217<br/>41271236</p><h2>W5</h2>
 <h4 data-end="11" data-start="0">1. 用繁體中文詳細說明下列資料</h4>
 <p data-end="239" data-start="118">Webots 是一個開放源碼的機器人仿真軟體，它允許用戶進行機器人設計、測試和模擬。其主要特點是支援多種機器人平台，提供物理引擎來模擬現實世界的物理條件，如碰撞、重力、摩擦等。Webots 主要應用於機器人學習、機器人控制、機器人設計等領域。</p>
 <p data-end="277" data-start="241">這篇簡介介紹了 Webots 的核心功能和使用方法，涵蓋了以下幾個要點：</p>
@@ -156,7 +191,7 @@ brython_div1 &lt;= "7. " + html.A("41223147", href="https://mdecd2025.github.io/
 </ul>
 </li>
 </ul>
-<h3 data-end="2368" data-start="2336">5. 詳細說明如何手動方式在 Webots 建立下列場景</h3>
+<h4 data-end="2368" data-start="2336">5. 詳細說明如何手動方式在 Webots 建立下列場景</h4>
 <p data-end="2400" data-start="2370">要手動在 Webots 中建立場景，您可以按照以下步驟進行：</p>
 <ol data-end="2682" data-start="2402">
 <li data-end="2432" data-start="2402"><strong data-end="2418" data-start="2405">啟動 Webots</strong>：開啟 Webots 軟體。</li>
@@ -166,7 +201,7 @@ brython_div1 &lt;= "7. " + html.A("41223147", href="https://mdecd2025.github.io/
 <li data-end="2643" data-start="2605"><strong data-end="2617" data-start="2608">設置傳感器</strong>：為您的機器人添加各種傳感器，如距離感測器、相機等。</li>
 <li data-end="2682" data-start="2644"><strong data-end="2658" data-start="2647">保存並測試場景</strong>：設定完成後，保存場景並運行仿真來測試您的場景。</li>
 </ol>
-<p><strong>6. 手把手一步步說明如何利用圖形介面 menu 建立這個場景，有哪些要點必須特別注意？</strong> 在 Webots 中使用圖形介面建立場景的步驟：</p>
+<h4 data-end="2368" data-start="2336">6. 手把手一步步說明如何利用圖形介面 menu 建立這個場景，有哪些要點必須特別注意？ 在 Webots 中使用圖形介面建立場景的步驟：</h4>
 <p><strong>1.開啟 Webots 軟體</strong>，選擇 File -&gt; New World 開始建立新的仿真場景。</p>
 <p><strong>2.添加物體</strong>：點擊左上方的“Add”按鈕，選擇需要的場景物體（例如地面、牆壁等）。每次添加後可以透過右側的屬性視窗來設置每個物體的具體參數。</p>
 <p><strong>3. 創建機器人</strong>：在 Add -&gt; Robot 中選擇一個機器人模型，如差速車、機械手臂等，並為其設置適當的參數。</p>
