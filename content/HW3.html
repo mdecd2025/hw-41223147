@@ -146,7 +146,32 @@ img.add_border {
 <p>HW3 (20%):<span style="background-color: #ffff00;">建立 Webots 桌上籃球遊戲機模擬系統</span></p>
 <p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 HW3 - 學員學號</p>
 <p>檔案下載:<a href="./../downloads/41223147-HW3.7z">/downloads/41223147-HW3.7z</a></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/14xzGaq6YjY?si=C2icA3ueN2YkfbgD" title="YouTube video player" width="450"></iframe></p><br />HW2 << <a href='HW2.html'>Previous</a> <a href='tasks.html'>Next</a> >> tasks</div>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/14xzGaq6YjY?si=C2icA3ueN2YkfbgD" title="YouTube video player" width="450"></iframe></p>
+<p>投球程式:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from controller import Robot
+
+def run_robot():
+    # Create the Robot instance
+    robot = Robot()
+
+    # Get simulation time step
+    timestep = int(robot.getBasicTimeStep())
+
+    # Get motor and keyboard devices
+    motor = robot.getDevice('motor1')
+    keyboard = robot.getKeyboard()
+    keyboard.enable(timestep)
+
+    # Set initial motor position
+    initial_position = 0.0  # Assuming initial position is 0
+
+    # Main control loop
+    while robot.step(timestep) != -1:
+        motor.setPosition(38 * 3.14159 / 180)
+
+if __name__ == "__main__":
+    run_robot()</pre>
+<p></p><br />HW2 << <a href='HW2.html'>Previous</a> <a href='tasks.html'>Next</a> >> tasks</div>
         
     <!-- footer -->
       <div class="container">
