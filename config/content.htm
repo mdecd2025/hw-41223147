@@ -87,7 +87,7 @@ if __name__ == "__main__":
 <p>先前在solvespace組裝連桿時link2的位置裝錯，導致啟動時link2與link1分離，後來有重新在webots上組裝並錄影</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sQ56PbUn_j8?si=Vpvq_p2Hl2EzG6Y0" title="YouTube video player" width="450"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7oYMfXTpen0?si=-cZdahg9XEpSGMw9" title="YouTube video player" width="450"></iframe></p>
-<h2>HW3</h2>
+<p>心得:要先在solvespace畫好每個零件組裝起來後轉成stl檔，接著最重要的一步是要把stl檔轉成obj檔，這樣才可以在webots裡面匯入零件。轉成obj檔後在webots依序設定每個零件的座標與顏色最後在匯入程式即可轉動。我第一次在webots上模擬時因為在solvespace上的link2位置組裝錯，所以轉動時會與link1分離，我又重新組裝了一遍把link2位置調整了一下可正常轉動。</p><h2>HW3</h2>
 <p>HW3 (20%):<span style="background-color: #ffff00;">建立 Webots 桌上籃球遊戲機模擬系統</span></p>
 <p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 HW3 - 學員學號</p>
 <p>檔案下載:<a href="/downloads/41223147HW3.7z">/downloads/41223147HW3.7z</a></p>
@@ -262,9 +262,9 @@ for i in all_stud:
 <p>修改HW2-link2尺寸</p>
 <p>將link2長度0.6m更改成0.7m</p>
 <p>將零件組裝好後轉obj檔匯入webots，因joint3的X、Y是跟隨原本長度0.6m的數值，所以要道solvespace確認joint3的座標，並在anchor修改正確數值</p>
+<p><a href="/downloads/w16-HW2.7z">w16-HW2.7z</a></p>
 <p><img alt="" height="333" src="/images/螢幕擷取畫面 2025-06-11 164437.png" width="444"/></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/C1BOy2aEc40?si=lr9_LDFyYIbEiyGc" title="YouTube video player" width="450"></iframe></p>
-<h1>Midterm</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/C1BOy2aEc40?si=lr9_LDFyYIbEiyGc" title="YouTube video player" width="450"></iframe></p><h1>Midterm</h1>
 <p>本課程所繳交的期中成績為學員自評之學習期望成績.</p>
 <p>期中考週的自評期望成績繳交流程:</p>
 <ol>
@@ -318,7 +318,7 @@ for i in all_stud:
 <p><span>10.記得作動的物理量需打開</span></p>
 <p><span>角度參考圖如下(長度放大10倍，角度不變):</span></p>
 <p><span><img alt="" height="280" src="/images/螢幕擷取畫面 2025-05-16 160641.png" width="525"/></span></p>
-<h2>Exam2</h2>
+<p><span>心得:Exam1的製作過程跟HW1很像，要設定連桿尺寸與顏色，在這過程中要注意的是link1的夾角要設定自己的學號並轉換成勁度，joint1與joint2的座標要根據solvespace繪製好</span><span>的草圖座標去設定才有辦法讓節點街上並正常旋轉。</span></p><h2>Exam2</h2>
 <p>Exam2 (10%): 利用 CAD 零組件建立模擬場景</p>
 <p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 Exam2 - 學員學號</p>
 <p>檔案下載:<a href="/downloads/41223147EXAM2.7z">/downloads/41223147EXAM2.7z</a></p>
@@ -359,7 +359,8 @@ for i in all_stud:
 <p><span>3.利用 <a href="https://mde.tw/cd2025/downloads/youbot_cart_w10_websocket.7z">youbot_cart_w10_websocket.7z</a> 中的 Youbot 底座平台，由各組組長以 webotsw --stream 啟動後，可在其餘組員的電腦中，透過 Websocket 客戶端程式控制平台車的前進、後退與左右轉。</span></p>
 <p><span>我為伺服器端讓組員當客戶端串流到伺服端，組員座號為10、25、29、32</span></p>
 <p><span><a href="/downloads/41223147Exam3-3.7z">41223147Exam3-3.7z</a></span></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/q20s75eIMEk?si=TBipBQ4AnPoNx12h" title="YouTube video player" width="450"></iframe></p><h1>Final</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/q20s75eIMEk?si=TBipBQ4AnPoNx12h" title="YouTube video player" width="450"></iframe></p>
+<p>心得:開啟webotsw --stream後將電腦的IPV4關閉連線至自己的IPV6，開啟協同串流網站後整組人員需要有一個當伺服器端執行sever程式，其他組員當客戶端，在串流平台上輸入的IP位置是伺服器端的人員IP位置，客戶端的組員執行client程式即可，之後再按指令鍵控制變化。操作過程中有多次sever跟client程式沒有輸入相同的IP位置，還有防火牆與proxy沒有設定好會造成伺服器無法抓取到IP位置，我們在這方面還不夠了解所以在這方面要再多探討。</p><h1>Final</h1>
 <p><span>期末協同專案執行過程影片、簡報與 PDf 報告檔案 (六人一組) (30%)</span></p>
 <p><span>題目: <span style="background-color: #ccffcc;">Webots 動態投籃模擬系統的協同設計</span></span></p>
 <p><span>說明: </span></p>
