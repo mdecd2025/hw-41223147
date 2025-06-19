@@ -51,6 +51,7 @@
 <p><img alt="" height="258" src="/images/螢幕擷取畫面 2025-05-06 214926.png" width="454"/></p>
 <p>後來嘗試將程式導入即可正常轉動</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RQmhufLuaGw?si=qsVNtgyIzjygVZMO" title="YouTube video player" width="450"></iframe></p>
+<p>心得:第一次接觸webots這個軟體還不太熟悉，做HW1的過程都是看別人依序新增的座標、節點、顏色與尺寸自己再按照順序新增一樣的東西，因為還不了解每個節點位置的相互關西，所以製作過程相對緩慢，每個連桿新增完成後還不知道要匯入python程式才可以轉動，後面有新增匯入程式的過程。</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from controller import Robot
 
 def run_robot():
@@ -77,7 +78,7 @@ if __name__ == "__main__":
 # Enter here exit cleanup code.
 </pre>
 <p></p>
-<h2>HW2</h2>
+<p></p><h2>HW2</h2>
 <p>HW2 (5%): <span style="background-color: #ffff00;">建立由 CAD 繪製零件組成的平面四連桿機構 Webots 模擬場景</span></p>
 <p>檔案下載:<a href="/downloads/41223147HW2.7z">/downloads/41223147HW2.7z</a></p>
 <p>組裝完畢後最後導入的程式不正確，所以無法轉動</p>
@@ -87,13 +88,14 @@ if __name__ == "__main__":
 <p>先前在solvespace組裝連桿時link2的位置裝錯，導致啟動時link2與link1分離，後來有重新在webots上組裝並錄影</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sQ56PbUn_j8?si=Vpvq_p2Hl2EzG6Y0" title="YouTube video player" width="450"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7oYMfXTpen0?si=-cZdahg9XEpSGMw9" title="YouTube video player" width="450"></iframe></p>
-<h2>HW3</h2>
+<p>心得:要先在solvespace畫好每個零件組裝起來後轉成stl檔，接著最重要的一步是要把stl檔轉成obj檔，這樣才可以在webots裡面匯入零件。轉成obj檔後在webots依序設定每個零件的座標與顏色最後在匯入程式即可轉動。我第一次在webots上模擬時因為在solvespace上的link2位置組裝錯，所以轉動時會與link1分離，我又重新組裝了一遍把link2位置調整了一下可正常轉動。</p><h2>HW3</h2>
 <p>HW3 (20%):<span style="background-color: #ffff00;">建立 Webots 桌上籃球遊戲機模擬系統</span></p>
 <p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 HW3 - 學員學號</p>
 <p>檔案下載:<a href="/downloads/41223147HW3.7z">/downloads/41223147HW3.7z</a></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/14xzGaq6YjY?si=C2icA3ueN2YkfbgD" title="YouTube video player" width="450"></iframe></p>
 <p>加入籃框:</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="300" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/W6ZlJOYPeY0?si=G3QDytggKZdRKu7D" title="YouTube video player" width="450"></iframe></p>
+<p>心得:HW3跟HW2一樣要先在solvespacec繪製好零件並組合好轉stl檔再轉obj檔，再webots組合好後新增一顆球，然後設定球的滾動方向及調整motor的力量，最後再匯入籃球框並調整好位置就完成了這個作業。</p>
 <p>投球程式:</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from controller import Robot
 
@@ -118,8 +120,7 @@ def run_robot():
 
 if __name__ == "__main__":
     run_robot()</pre>
-<p></p>
-<h1>week</h1>
+<p></p><h1>week</h1>
 <h2>w1</h2>
 <p><span>建立個人作業網站與倉儲</span></p>
 <p><span>分組6人一組進行協同倉儲管理</span></p>
